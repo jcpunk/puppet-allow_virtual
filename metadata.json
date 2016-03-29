@@ -1,12 +1,12 @@
 {
-  "name": "ecfsla-fix_allow_virtual",
+  "name": "jcpunk-allow_virtual",
   "version": "0.1.0",
-  "author": "ecfsla",
+  "author": "jcpunk",
   "summary": "Fix puppet-agent \"allow_virtual\" warnings",
   "license": "Apache 2.0",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
+  "source": "https://github.com/jcpunk/puppet-allow_virtual",
+  "project_page": "https://github.com/jcpunk/puppet-allow_virtual",
+  "issues_url": "https://github.com/jcpunk/puppet-allow_virtual/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",

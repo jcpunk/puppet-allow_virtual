@@ -1,10 +1,12 @@
-# == Class: fix_allow_virtual
-class fix_allow_virtual (
-  $run_stage  = $fix_allow_virtual::params::run_stage,
-){
+# == Class: allow_virtual
+class allow_virtual (
+  $stage         = $allow_virtual::params::run_stage,
+  $allow_virtual = $allow_virtual::params::allow_virtual,
+) inherits allow_virtual::params {
 
-  validate_string($run_stage)
+  validate_string($stage)
+  validate_bool($allow_virtual)
 
-  class { 'fix_allow_virtual::stage': stage => $run_stage }
+  Package { allow_virtual => $allow_virtual, }
 
 }
